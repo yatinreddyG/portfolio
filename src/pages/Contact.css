@@ -1,0 +1,39 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-card h4 { margin: 0 0 0.2rem; }
+.contact-card p { margin: 0; font-size: 0.9rem; word-break: break-word; }
+
+.contact-emoji {
+  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+
+.resume-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  background: var(--gradient-soft);
+}
+
+.resume-cta h3 { margin-bottom: 0.3rem; }
+.resume-cta p { margin: 0; }
