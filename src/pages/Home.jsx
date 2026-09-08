@@ -28,8 +28,7 @@ function Home() {
         </div>
 
         <div className="hero-photo">
-          {/* Swap this placeholder for <img src="/portrait.jpg" alt="Yatin Reddy" /> once the photo is added */}
-          <div className="hero-photo-placeholder">GY</div>
+          <img src="/portrait.webp" alt="Yatin Reddy" />
         </div>
       </section>
 
