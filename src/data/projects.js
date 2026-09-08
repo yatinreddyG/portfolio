@@ -34,8 +34,8 @@ const projects = [
       "Delivers a working ATS score, skill gap analysis, AI-generated resume recommendations, and a " +
       "conversational AI career assistant — all running on a self-hosted Spring Boot backend with zero " +
       "paid infrastructure.",
-    liveUrl: "",
-    githubUrl: "",
+    liveUrl: "https://resume-analyzer-frontend-1eb3.onrender.com",
+    githubUrl: "https://github.com/yatinreddyG/Resume_analyzer",
     screenshots: [],
   },
   {
@@ -71,7 +71,7 @@ const projects = [
       "EfficientNetB0 reaches ~59.5% test accuracy with meaningfully better minority-class recall than " +
       "the custom CNN, and ships as the active model. Both models and full classification reports are " +
       "documented transparently in the project README.",
-    liveUrl: "",
+    liveUrl: "https://alzheimer-s-disease-detection-x6po.onrender.com",
     githubUrl: "https://github.com/yatinreddyG/Alzheimer-s_Disease_Detection",
     screenshots: [],
   },
