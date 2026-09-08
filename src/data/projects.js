@@ -36,7 +36,24 @@ const projects = [
       "paid infrastructure.",
     liveUrl: "https://resume-analyzer-frontend-1eb3.onrender.com",
     githubUrl: "https://github.com/yatinreddyG/Resume_analyzer",
-    screenshots: [],
+    screenshots: [
+      {
+        src: "/screenshots/ai-resume-analyzer/upload.webp",
+        caption: "Upload a resume and job description to kick off the analysis.",
+      },
+      {
+        src: "/screenshots/ai-resume-analyzer/ats-score.webp",
+        caption: "ATS score with a matched vs. missing skills breakdown.",
+      },
+      {
+        src: "/screenshots/ai-resume-analyzer/ai-recommendations.webp",
+        caption: "Gemini-generated feedback on how to close the gap for the role.",
+      },
+      {
+        src: "/screenshots/ai-resume-analyzer/ai-bot-chat.webp",
+        caption: "Conversational follow-up with the AI career assistant.",
+      },
+    ],
   },
   {
     slug: "alzheimers-disease-detection",
