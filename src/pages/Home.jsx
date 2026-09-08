@@ -8,20 +8,26 @@ function Home() {
   return (
     <div className="page home">
       <section className="hero fade-in">
-        <span className="pill">👋 Welcome to my portfolio</span>
-        <h1>
-          Hi, I'm <span className="gradient-text">Yatin Reddy</span> —
-          <br />
-          I build AI-powered applications that solve real problems.
-        </h1>
-        <p className="hero-sub">
-          Full-stack developer focused on machine learning and web engineering. I like taking an idea
-          from a messy dataset all the way to a working, deployed application — resume analysis,
-          medical imaging, health prediction, and more.
-        </p>
-        <div className="hero-actions">
-          <Link to="/projects" className="btn btn-primary">View my projects</Link>
-          <Link to="/contact" className="btn btn-ghost">Get in touch</Link>
+        <div className="hero-text">
+          <span className="pill">👋 Welcome to my portfolio</span>
+          <h1>
+            Hi, I'm <span className="gradient-text">Yatin Reddy</span>
+          </h1>
+          <p className="hero-sub">
+            I'm a final-year CS student who likes turning half-formed ideas into things people can
+            actually click around and use. Most of my projects start with a messy dataset and end up
+            as a live app — resume scoring, MRI-based diagnosis, health prediction, whatever the
+            problem calls for. Still learning as I go, but I ship.
+          </p>
+          <div className="hero-actions">
+            <Link to="/projects" className="btn btn-primary">View my projects</Link>
+            <Link to="/contact" className="btn btn-ghost">Get in touch</Link>
+          </div>
+        </div>
+
+        <div className="hero-photo">
+          {/* Swap this placeholder for <img src="/portrait.jpg" alt="Yatin Reddy" /> once the photo is added */}
+          <div className="hero-photo-placeholder">GY</div>
         </div>
       </section>
 
