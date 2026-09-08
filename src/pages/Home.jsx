@@ -1,9 +1,20 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
 import "./Home.css";
 
 function Home() {
   const featured = projects.slice(0, 3);
+  const [photoOpen, setPhotoOpen] = useState(false);
+
+  useEffect(() => {
+    if (!photoOpen) return undefined;
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setPhotoOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [photoOpen]);
 
   return (
     <div className="page home">
@@ -28,9 +39,37 @@ function Home() {
         </div>
 
         <div className="hero-photo">
-          <img src="/portrait.webp" alt="Yatin Reddy" />
+          <button
+            type="button"
+            className="hero-photo-btn"
+            onClick={() => setPhotoOpen(true)}
+            aria-label="View full-size photo"
+          >
+            <img src="/portrait.webp" alt="Yatin Reddy" />
+          </button>
         </div>
       </section>
+
+      {photoOpen && (
+        <div
+          className="lightbox-backdrop"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setPhotoOpen(false)}
+        >
+          <button
+            type="button"
+            className="lightbox-close"
+            aria-label="Close"
+            onClick={() => setPhotoOpen(false)}
+          >
+            ✕
+          </button>
+          <figure className="lightbox-figure" onClick={(e) => e.stopPropagation()}>
+            <img src="/portrait.webp" alt="Yatin Reddy" />
+          </figure>
+        </div>
+      )}
 
       <section className="section highlights">
         <div className="card highlight">
