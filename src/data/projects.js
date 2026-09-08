@@ -90,7 +90,24 @@ const projects = [
       "documented transparently in the project README.",
     liveUrl: "https://alzheimer-s-disease-detection-x6po.onrender.com",
     githubUrl: "https://github.com/yatinreddyG/Alzheimer-s_Disease_Detection",
-    screenshots: [],
+    screenshots: [
+      {
+        src: "/screenshots/alzheimers-disease-detection/home.webp",
+        caption: "Landing page — upload an MRI scan for an instant classification.",
+      },
+      {
+        src: "/screenshots/alzheimers-disease-detection/upload.webp",
+        caption: "Upload & Predict — drag in a brain MRI scan to analyze.",
+      },
+      {
+        src: "/screenshots/alzheimers-disease-detection/result.webp",
+        caption: "Prediction result with the Grad-CAM heatmap and probability breakdown.",
+      },
+      {
+        src: "/screenshots/alzheimers-disease-detection/about.webp",
+        caption: "Technical approach and stack behind the CNN + EfficientNetB0 models.",
+      },
+    ],
   },
   {
     slug: "medpredict",
