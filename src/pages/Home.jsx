@@ -14,10 +14,12 @@ function Home() {
             Hi, I'm <span className="gradient-text">Yatin Reddy</span>
           </h1>
           <p className="hero-sub">
-            I'm a final-year CS student who likes turning half-formed ideas into things people can
-            actually click around and use. Most of my projects start with a messy dataset and end up
-            as a live app — resume scoring, MRI-based diagnosis, health prediction, whatever the
-            problem calls for. Still learning as I go, but I ship.
+            Computer Science Engineering student with hands-on experience building full-stack and
+            AI-driven applications using Java, Python, JavaScript, React, Spring Boot, and Flask. I
+            enjoy taking a problem from idea to a working, deployed application — resume analysis,
+            medical imaging, health prediction — backed by a strong foundation in DSA, DBMS, and
+            problem solving. Passionate about building reliable software and continuously growing my
+            technical skills.
           </p>
           <div className="hero-actions">
             <Link to="/projects" className="btn btn-primary">View my projects</Link>
