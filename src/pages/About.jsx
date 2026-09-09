@@ -53,13 +53,13 @@ function About() {
 
       <section className="section about-grid">
         <div className="card about-card">
-          <h3>🎓 Education</h3>
+          <h3>Education</h3>
           <p><strong>Bachelor of Technology (B.Tech) — Computer Science and Engineering</strong></p>
           <p>CVR College of Engineering, Hyderabad</p>
           <p>CGPA: 8.20 / 10 · Expected 2027</p>
         </div>
         <div className="card about-card">
-          <h3>🎯 What I'm into</h3>
+          <h3>What I'm into</h3>
           <p>
             Building reliable full-stack and AI-driven applications — resume analysis, medical
             imaging, and health prediction — with a strong foundation in OOP, DSA, DBMS, operating

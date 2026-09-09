@@ -16,9 +16,7 @@ function Projects() {
       <div className="project-grid">
         {projects.map((p) => (
           <Link key={p.slug} to={`/projects/${p.slug}`} className="card project-card">
-            <div className="project-emoji" style={{ background: p.color + "22", color: p.color }}>
-              {p.emoji}
-            </div>
+            <div className="project-emoji">{p.emoji}</div>
             <h3>{p.title}</h3>
             <p>{p.tagline}</p>
             <div className="tag-row">

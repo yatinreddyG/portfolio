@@ -117,9 +117,7 @@ function ProjectDetail() {
       <Link to="/projects" className="back-link">← All projects</Link>
 
       <div className="detail-head">
-        <div className="project-emoji" style={{ background: project.color + "22", color: project.color }}>
-          {project.emoji}
-        </div>
+        <div className="project-emoji">{project.emoji}</div>
         <h1>{project.title}</h1>
         <p className="lead">{project.tagline}</p>
 

@@ -12,12 +12,15 @@
 .projects-page .project-emoji {
   width: 48px;
   height: 48px;
-  border-radius: 14px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  filter: grayscale(0.35) opacity(0.92);
 }
 
 .projects-page .tag-row {

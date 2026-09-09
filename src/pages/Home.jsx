@@ -20,7 +20,7 @@ function Home() {
     <div className="page home">
       <section className="hero fade-in">
         <div className="hero-text">
-          <span className="pill">👋 Welcome to my portfolio</span>
+          <span className="kicker">// portfolio</span>
           <h1>
             Hi, I'm <span className="gradient-text">Yatin Reddy</span>
           </h1>
@@ -94,9 +94,7 @@ function Home() {
         <div className="project-grid">
           {featured.map((p) => (
             <Link key={p.slug} to={`/projects/${p.slug}`} className="card project-card fade-in">
-              <div className="project-emoji" style={{ background: p.color + "22", color: p.color }}>
-                {p.emoji}
-              </div>
+              <div className="project-emoji">{p.emoji}</div>
               <h3>{p.title}</h3>
               <p>{p.tagline}</p>
               <div className="tag-row">
